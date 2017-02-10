@@ -2,14 +2,14 @@
 
 <%= form_for @album do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, :class => "form-control" %>
   <%= f.label :image %>
-  <%= f.text_field :image, placeholder: "Image Size: 400x289" %>
+  <%= f.text_field :image, placeholder: "Recommended Image Size: 400x289", :class => "form-control" %>
   <%= f.label :price %>
-  <%= f.number_field :price %>
+  <%= f.number_field :price, :class => "form-control" %>
   <%= f.label :artist %>
-  <%= f.text_field :artist %>
+  <%= f.text_field :artist, :class => "form-control" %>
   <%= f.label :release_date %>
-  <%= f.date_field :release_date %>
-  <%= f.submit %>
+  <%= f.date_field :release_date, :class => "form-control" %>
+  <%= f.submit :class => "btn btn-xl margin-top-fix" %>
 <% end %>
