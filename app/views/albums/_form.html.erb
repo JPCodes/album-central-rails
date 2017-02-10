@@ -1,5 +1,7 @@
 <%= render 'layouts/errors', :object => @album %>
 
+<%= content_tag(:div, notice, class: 'notice') if notice %>
+
 <%= form_for @album do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name, :class => "form-control" %>

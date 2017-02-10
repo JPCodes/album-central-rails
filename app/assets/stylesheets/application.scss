@@ -17,12 +17,37 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-.important-text {
-  color: red!important;
-  text-decoration: underline;
-  font-weight: bold!important;
-}
 
 .margin-top-fix {
   margin-top: 10px;
+}
+
+.navbar-custom {
+  background: transparent;
+  border: none;
+  li a {
+    color: #fff!important;
+  }
+  .important-text {
+    color: red!important;
+    text-decoration: underline;
+    font-weight: bold!important;
+  }
+}
+
+.navbar-brand {
+  color: #fff!important;
+}
+
+@media (max-width: 768px) {
+  .navbar-custom  {
+  background: #222222;
+  }
+}
+
+.notice {
+  padding: 25px;
+  text-align: center;
+  background: #222222;
+  color: #fff;
 }

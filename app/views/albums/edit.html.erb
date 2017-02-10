@@ -3,4 +3,10 @@
   <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
 </div>
 
+<% if @album.image.length < 10 %>
+  <%= image_tag ('portfolio/'.concat((rand(1...6)).to_s).concat('.jpg')), :class => 'img-responsive img-centered', size: "400x289"  %>
+<% else %>
+  <%= image_tag @album.image, :class => 'img-responsive img-centered' %>
+<% end %>
+
 <%= render 'form' %>

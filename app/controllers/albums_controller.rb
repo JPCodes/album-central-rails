@@ -14,8 +14,10 @@ class AlbumsController < ApplicationController
   def create
     @album = Album.create(album_params)
     if @album.save
-      redirect_to :root
+      flash.now[:notice] = "Album listing successfully added!"
+      redirect_to album_path(@album)
     else
+      flash.now[:notice] = "Please fill in your listing"
       render :new
     end
   end
@@ -27,8 +29,10 @@ class AlbumsController < ApplicationController
   def update
     @album = Album.find(params[:id])
     if @album.update(album_params)
+      flash.now[:notice] = "Album listing successfully added!"
       redirect_to :root
     else
+      flash.now[:notice] = "Please fill in your listing"
       render :edit
     end
   end
