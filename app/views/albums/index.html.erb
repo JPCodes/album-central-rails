@@ -6,7 +6,7 @@
 <%  @albums.each do |album| %>
 <div class="col-md-4 col-sm-6 portfolio-item">
   <% if album.image.length < 10 %>
-    <%= image_tag 'portfolio/roundicons.png', :class => 'img-responsive'  %>
+    <%= image_tag ('portfolio/'.concat((rand(1...6)).to_s).concat('.jpg')), :class => 'img-responsive', size: "400x289"  %>
   <% else %>
     <%= image_tag album.image, :class => 'img-responsive' %>
   <% end %>
