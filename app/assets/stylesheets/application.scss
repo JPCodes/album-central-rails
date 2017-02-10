@@ -16,3 +16,9 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+.important-text {
+  color: red!important;
+  text-decoration: underline;
+  font-weight: bold!important;
+}
