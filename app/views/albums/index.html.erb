@@ -3,7 +3,9 @@
 <div class="row">
 <% @albums.each do |album| %>
 <div class="col-md-4">
-  <p><%= album.name %></p>
+  <p><%= album.name %> | <%= link_to 'Remove Album', album_path(album),
+                         :data => {:confirm => "Confirm Album Deletion?",
+                         :method => "delete"} %></p>
 </div>
 <% end %>
 </div>
