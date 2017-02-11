@@ -17,6 +17,7 @@ cd album-central-rails
 bundle install
 rake db:create
 rake db:migrate
+rake db:seed
 rails server
 ```
 * _Then, in any modern browser, navigate to:_
