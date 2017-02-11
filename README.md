@@ -14,6 +14,7 @@ This Rails 5 app is an easy-to-use app that allows users to input albums and alb
 ```
 git clone https://github.com/JPCodes/album-central-rails
 cd album-central-rails
+bundle install
 rake db:create
 rake db:migrate
 rails server
