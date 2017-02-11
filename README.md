@@ -22,7 +22,7 @@ rails server
 ```
 * _Then, in any modern browser, navigate to:_
 ```
-localhost:4200
+localhost:3000
 ```
 
 ## Support and contact details
