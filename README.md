@@ -8,6 +8,9 @@
 
 This Rails 5 app is an easy-to-use app that allows users to input albums and album attributes to store and display.
 
+## Heroku
+[View on Heroku](http://album-central.herokuapp.com/)_
+
 ## Setup/Installation Requirements
 
 * _In the Terminal, run:_
